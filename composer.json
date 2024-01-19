@@ -1,5 +1,5 @@
 {
-    "name": "jolicode/slack-php-api",
+    "name": "antoineveldhoven/slack-php-api",
     "description": "An up to date PHP client for Slack's API",
     "keywords": ["slack", "slackapi", "api", "client", "openapi", "swagger", "sdk"],
     "type": "library",
@@ -27,7 +27,7 @@
     },
     "require": {
         "php": ">=7.4",
-        "jane-php/open-api-runtime": "~7.1",
+        "antoineveldhoven/open-api-runtime": "~7.1",
         "psr/http-client-implementation": "*",
         "php-http/client-common": "^1.9 || ^2.0",
         "php-http/discovery": "^1.11",
@@ -49,6 +49,15 @@
     "config": {
         "allow-plugins": {
             "php-http/discovery": true
+        },
+        "github-oauth": {
+            "github.com": "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"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/antoineveldhoven/janephp"
+        }
+    ]    
 }
